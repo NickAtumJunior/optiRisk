@@ -1,7 +1,13 @@
-import {  Button, Grid, Stack, TextField } from '@mui/material'
+import { Button, ButtonGroup, Grid, IconButton, Stack, TextField } from '@mui/material'
 import React from 'react'
 import Navbar from '../components/Navbar'
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GoogleIcon from '@mui/icons-material/Google';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CloudIcon from '@mui/icons-material/Cloud';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
 function Home() {
   return (
     <>
@@ -332,7 +338,7 @@ function Home() {
 
 
         <Grid container xs={12} md={12} xl={12} style={{
-          height: '120vh',
+          height: '140vh',
           backgroundImage: 'linear-gradient(to bottom left,#1318ab,#47cffc)',
 
         }}>
@@ -352,7 +358,7 @@ function Home() {
           }}>
             <center>
               <Stack direction='row' spacing={2} sx={{
-                marginBottom:'2%'
+                marginBottom: '2%'
               }}>
 
                 <TextField
@@ -372,8 +378,8 @@ function Home() {
                   color='form'
                 />
               </Stack>
-              <Stack direction='row' spacing={2}  sx={{
-                marginBottom:'2%'
+              <Stack direction='row' spacing={2} sx={{
+                marginBottom: '2%'
               }}>
 
                 <TextField
@@ -394,18 +400,18 @@ function Home() {
                 />
               </Stack>
               <Stack spacing={1} direction='column' sx={{
-                marginBottom:'2%'
+                marginBottom: '2%'
               }}>
                 <TextField
-                label="Describe your requirement*"
-                variant='outlined'
-                fullWidth
-                color='form'
-                
+                  label="Describe your requirement*"
+                  variant='outlined'
+                  fullWidth
+                  color='form'
+
                 />
               </Stack>
               <Stack direction='row' spacing={2} sx={{
-                marginBottom:'2%'
+                marginBottom: '2%'
               }}>
 
                 <TextField
@@ -426,7 +432,7 @@ function Home() {
                 />
               </Stack>
               <Button
-              variant='contained'
+                variant='contained'
                 color='btnColor'
                 sx={{
                   textTransform: 'capitalize',
@@ -436,15 +442,117 @@ function Home() {
                   width: '60%',
                   marginBottom: '2%'
                 }}
-               
+
               >Get a Demo</Button>
             </center>
           </Grid>
           <Grid item xs={2} md={2} sm={2}>
             {/* just for spacing */}
           </Grid>
-          <Grid md={12} sm={12}>
-              <h1>for footer</h1>
+          <Grid container md={12} sm={12} style={{
+            backgroundColor: '#38009D',
+
+          }}>
+            <Grid item md={1} sm={1}>
+              {/* for spacing */}
+            </Grid>
+            <Grid item md={2} sm={2}>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Products</h4>
+              <ul style={{
+                color: 'white',
+                listStyle: 'unset'
+              }}>
+                <li>Sales-Order-Management</li>
+                <li>Delivery-Planing-Management</li>
+                <li>Collection-Management-System</li>
+                <li>AMPL-Dev-IDE</li>
+                <li>OPL-Studio</li>
+                <li>12V-DC-Wireless-Dot-Matrix</li>
+              </ul>
+            </Grid>
+            <Grid item md={2} sm={2}>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Solutions</h4>
+              <ul style={{
+                color: 'white',
+                listStyle: 'unset'
+              }}>
+                <li>Transportation-Optimization</li>
+                <li>Packing-Optimization</li>
+                <li>Production-Planning & Scheduling</li>
+                <li>Inventory-Management</li>
+                <li>Supply-Chain-Network-Design</li>
+                <li>Porfolio-Optimization</li>
+              </ul>
+            </Grid>
+            <Grid item md={2} sm={2}>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Services</h4>
+              <ul style={{
+                color: 'white',
+                listStyle: 'unset'
+              }}>
+                <li>Staff-Augmentation</li>
+                <li>Training</li>
+                <li>Out-Sourced-Development</li>
+              </ul>
+            </Grid>
+            <Grid item md={2} sm={2}>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Company</h4>
+              <ul style={{
+                color: 'white',
+                listStyle: 'unset'
+              }}>
+                <li>About-us</li>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>Partners</li>
+                <li>Contact-Us</li>
+              </ul>
+            </Grid>
+            <Grid item md={2} sm={2}>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Follow-Us-On</h4>
+              <ButtonGroup variant="contained" >
+                <IconButton><FacebookIcon htmlColor='white' /></IconButton>
+                <IconButton><TwitterIcon htmlColor='white' /></IconButton>
+                <IconButton><GoogleIcon htmlColor='white' /></IconButton>
+                <IconButton><LinkedInIcon htmlColor='white' /></IconButton>
+                <IconButton><CloudIcon htmlColor='white' /></IconButton>
+              </ButtonGroup>
+              <h4 style={{
+                color: '#03ff3d'
+              }}>Contact</h4>
+    
+                <Button sx={{
+                  color:'white'
+                }} variant='text' startIcon={<WhatsAppIcon htmlColor='white'/>}>+91 9840618472</Button>
+                <Button variant='text' startIcon={<EmailIcon htmlColor='white'/>} sx={{
+                  textTransform:'lowercase',
+                  color:'white'
+                }}>optimize@optriskindia.com</Button>
+               
+            </Grid>
+            <Grid item md={1} sm={1}>
+              {/* for spacing */}
+            </Grid>
+            <Grid item md={12} sm={12} style={{
+              marginTop:'-2%',
+              padding:'0',
+              height:'2vh'
+            }}>
+              <center><p style={{
+                color:'#03ff3d'
+              }}>© 2022 OptiRisk India Pvt. Ltd
+                All Rights Reserved.</p></center>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
